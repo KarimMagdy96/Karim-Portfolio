@@ -98,7 +98,7 @@ nav .checkbox:checked + .menu_box {
 .hero_content .hero_img {
   width: 350px;
   height: 350px;
-  background-image: url("img/IMG_1388.webp");
+  background-image: url(img/IMG_1388.webp);
   background-position: center center;
   background-size: cover;
   border: 5px solid black;
