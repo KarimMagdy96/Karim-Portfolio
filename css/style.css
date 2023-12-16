@@ -13,6 +13,7 @@ html {
 nav {
   position: fixed;
   top: 0;
+  z-index: 99;
   left: 0;
   width: 100%;
   max-width: 100%;
@@ -159,7 +160,96 @@ nav .checkbox:checked + .menu_box {
   bottom: 10px;
 }
 /* hero section end */
+/* bout me section start */
+.about_me {
+  padding: 150px 0;
+}
+.about_me .container {
+  padding: 0;
+}
+.about_me .container .about_img {
+  width: 410px;
+  height: 350px;
+  position: relative;
+  z-index: 0;
+}
+.about_me .container .about_img::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg");
+  background-position: center center;
+  background-size: cover;
+  padding: 40px;
+  bottom: -6%;
+  right: -15%;
+  width: 100px;
+  background-color: white;
+  transform: rotate(180deg);
+  font-size: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100px;
+  animation-name: spin;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.about_me .container .about_img::before {
+  content: "👨‍💻";
+  position: absolute;
+  z-index: 9;
+  padding: 40px;
+  bottom: -6%;
+  right: -15%;
+  width: 100px;
+  background-color: transparent;
+  font-size: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 100px;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.about_me .container .about_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.about_me .about_content {
+  width: 45%;
+  font-size: 17px;
+  color: #767676;
+}
+.about_me .about_content h3 {
+  color: #147efb;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.about_me .about_content h2 {
+  color: #2d2e32;
+  font-size: 25px;
+  padding-bottom: 20px;
+}
 
+.about_me .about_card {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-evenly;
+  gap: 32px;
+}
+/* bout me section end */
+
+/* ************************************************************************ */
 /* respon// Small devices (landscape phones, and up)*/
 @media (max-width: 767px) {
   /* navbar responsive start */
@@ -177,7 +267,6 @@ nav .checkbox:checked + .menu_box {
     position: fixed;
     width: 100%;
     height: 100vh;
-    z-index: 99999999;
     top: 80px;
     left: -100%;
     background-color: #f9f9f9;
