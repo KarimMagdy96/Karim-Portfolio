@@ -138,6 +138,7 @@ nav .checkbox:checked + .menu_box {
 .hero_title p {
   font-size: 18px;
   color: #555;
+  padding-right: 35px;
 }
 .container .skills {
   display: flex;
@@ -248,7 +249,116 @@ nav .checkbox:checked + .menu_box {
   gap: 32px;
 }
 /* bout me section end */
+/* portfolio section start */
+.portfolio {
+  background-color: #f9f9f9f9;
+  padding: 150px 0;
+}
+.portfolio .container {
+  padding: 0;
+}
+.portfolio .portfolio_header h3 {
+  color: #147efb;
+  margin-bottom: 10px;
+}
+.portfolio .portfolio_header h2 {
+  margin-bottom: 60px;
+}
+.portfolio_cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio_card {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  max-width: 90%;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+.portfolio_card:nth-child(4) {
+  margin-bottom: 0;
+}
+.portfolio_card:nth-child(2) .portfolio_card_content,
+.portfolio_card:nth-child(4) .portfolio_card_content {
+  order: -1;
+}
+.portfolio_card .portfolio_card_img {
+  width: 50%;
+  overflow: hidden;
+  max-height: 360px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.portfolio_card .portfolio_card_img img {
+  width: 100%;
+}
+.portfolio_card_content {
+  width: 40%;
+  display: flex;
+  padding-top: 25px;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio_card_content h3 {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+.portfolio_card_content p {
+  font-size: 17px;
+  color: #767676;
+  text-align: center;
+  padding: 0 35px;
+  margin-bottom: 10px;
+}
+.portfolio_stack {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+.portfolio_stack .Portfolio_stack_tech {
+  background-color: white;
+  padding: 10px 13px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  font-size: 17px;
+}
+.portfolio_links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
 
+  width: 60%;
+}
+.portfolio_links .portfolio_link {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+}
+.portfolio_links .portfolio_link a {
+  text-decoration: none;
+  color: #2d2e32;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 500;
+}
+.portfolio_links .portfolio_link a i {
+  font-size: 18px;
+}
+
+/* portfolio section end */
 /* ************************************************************************ */
 /* respon// Small devices (landscape phones, and up)*/
 @media (max-width: 767px) {
@@ -374,7 +484,6 @@ nav .checkbox:checked + .menu_box {
     margin: 25px 0;
   }
   .hero_title p {
-    font-size: 18px;
     padding-right: 20px;
   }
   .container .skills {
@@ -403,24 +512,37 @@ nav .checkbox:checked + .menu_box {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199px) {
+  /* nav responsive start */
   nav .links {
     width: 55%;
   }
+  /* nav responsive end */
+  /* hero section responsive start  */
   .container {
     width: 85%;
     padding: 120px 0 0 0;
   }
   .hero_title p {
-    font-size: 18px;
     padding-right: 35px;
   }
+  /* hero section responsive end */
+  /* about me responsive start */
+  .about_me .container {
+    width: 92%;
+  }
+  .about_me .about_card {
+    padding: 0;
+    gap: 75px;
+  }
+
+  /* about me responsive end */
 }
 
 /* X-Large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) {
-  .hero_title p {
-    font-size: 18px;
-    padding-right: 35px;
+@media (min-width: 1200px) and (max-width: 1380px) {
+  .about_me .about_card {
+    padding: 0;
+    gap: 75px;
   }
 }
 
