@@ -125,10 +125,9 @@ nav .checkbox:checked + .menu_box {
 }
 .hero_title .hero_social_icons a {
   padding-right: 5px;
-}
-.hero_title .hero_social_icons a:visited {
   color: #2d2e32;
 }
+
 .hero_title h1 {
   font-size: 55px;
   line-height: 1.2;
@@ -263,6 +262,7 @@ nav .checkbox:checked + .menu_box {
 }
 .portfolio .portfolio_header h2 {
   margin-bottom: 60px;
+  padding: 0 5px;
 }
 .portfolio_cards {
   display: flex;
@@ -565,6 +565,28 @@ footer .container {
     order: 0;
   }
   /* portfolio section responsive end */
+  /* contact section responsive stat*/
+  .content_icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 60px;
+  }
+  .contsct_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+  }
+  /* contact section responsive end*/
+  /* footer start */
+  footer .container {
+    gap: 30px;
+    flex-direction: column;
+  }
+  /* footer end */
 }
 
 /*Medium devices (tablets, 768px and up)*/
