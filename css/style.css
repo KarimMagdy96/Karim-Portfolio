@@ -177,7 +177,7 @@ nav .checkbox:checked + .menu_box {
 .about_me .container .about_img::after {
   content: "";
   position: absolute;
-  background-image: url("..img/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg");
+  background-image: url("../img/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg");
   background-position: center center;
   background-size: cover;
   padding: 40px;
