@@ -99,7 +99,7 @@ nav .checkbox:checked + .menu_box {
 .hero_content .hero_img {
   width: 350px;
   height: 350px;
-  background-image: url("/img/IMG_1388.webp");
+  background-image: url("img/IMG_1388.webp");
   background-position: center center;
   background-size: cover;
   border: 5px solid black;
@@ -177,7 +177,7 @@ nav .checkbox:checked + .menu_box {
 .about_me .container .about_img::after {
   content: "";
   position: absolute;
-  background-image: url("/img/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg");
+  background-image: url("img/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg");
   background-position: center center;
   background-size: cover;
   padding: 40px;
@@ -364,6 +364,12 @@ nav .checkbox:checked + .menu_box {
 
 /* portfolio section end */
 /* contact section start  */
+.contact .container {
+  padding: 0;
+}
+.contact {
+  padding: 110px 0;
+}
 .contact .container h3 {
   color: #147efb;
   margin-bottom: 10px;
@@ -372,13 +378,21 @@ nav .checkbox:checked + .menu_box {
   font-size: 25px;
 }
 .content_icons {
-  background-color: aqua;
   display: flex;
+  gap: 60px;
+  margin-top: 60px;
+}
+.contsct_icon {
+  display: flex;
+  align-items: center;
+  gap: 13px;
 }
 .contsct_icon .icon {
   width: 50px;
   height: 50px;
-  background-color: red;
+  background-color: white;
+  color: #147efb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -388,6 +402,37 @@ nav .checkbox:checked + .menu_box {
 }
 .contsct_icon .icon i {
   font-size: 30px;
+}
+.contsct_icon .icon_dec .title_dec {
+  color: #767676;
+}
+.contsct_icon .icon_dec .title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+footer {
+  padding: 50px;
+  background-color: #2d2e32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .container {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy_right {
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+}
+.footer_social_icons a i {
+  color: white;
+  font-size: 30px;
+  padding: 0 10px;
 }
 /* contact section end */
 /* ************************************************************************ */
