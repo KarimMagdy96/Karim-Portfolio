@@ -406,6 +406,10 @@ nav .checkbox:checked + .menu_box {
 .contsct_icon .icon_dec .title_dec {
   color: #767676;
 }
+.contsct_icon .icon_dec .title_dec a {
+  color: #767676;
+  text-decoration: none;
+}
 .contsct_icon .icon_dec .title {
   font-size: 17px;
   font-weight: 600;
