@@ -300,7 +300,7 @@ nav .checkbox:checked + .menu_box {
   transition: all 9s ease-in-out 0s;
 }
 .portfolio_card .portfolio_card_img img:hover {
-  transform: translateY(-85%);
+  transform: translateY(-90%);
 }
 .portfolio_card_content {
   width: 40%;
