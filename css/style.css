@@ -65,12 +65,8 @@ nav .checkBtn {
   display: none;
 }
 
-nav #checkInput {
-  display: none;
-}
-
-nav .checkbox:checked + .menu_box {
-  left: 0;
+.showToggle {
+  left: 0 !important;
 }
 /* nav bar end */
 
@@ -300,8 +296,9 @@ nav .checkbox:checked + .menu_box {
   transition: all 9s ease-in-out 0s;
 }
 .portfolio_card .portfolio_card_img img:hover {
-  transform: translateY(-90%);
+  transform: translateY(-80%);
 }
+
 .portfolio_card_content {
   width: 40%;
   display: flex;
